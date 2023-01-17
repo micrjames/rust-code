@@ -1,15 +1,10 @@
 fn main() {
-    fn a() {
-        let x: &str = "hello";
-        let y: i32 = 22;
-        b();
-    }
+    let x: i32 = 5;
+    let y: i32 = x; // Copy
+                    
+    let s1: String = String::from("hello");
+//    let s2: String = s1;    // Move (not shallow copy)
+    let s2: String = s1.clone();
 
-    fn b() {
-        let x: String = String::from("world");
-    }
+    println!("{}, world!", s2);
 }
-
-// each value in Rust has a variable that's called its owner.
-// there can only be one owner at a time.
-// when the owner goes out of scope, the value will be dropped.
