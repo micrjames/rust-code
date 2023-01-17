@@ -1,10 +1,17 @@
 fn main() {
-    let x: i32 = 5;
-    let y: i32 = x; // Copy
-                    
-    let s1: String = String::from("hello");
-//    let s2: String = s1;    // Move (not shallow copy)
-    let s2: String = s1.clone();
+    let s: String = String::from("hello");
+    takes_ownership(some_string: s);
 
-    println!("{}, world!", s2);
+    println!("{}", s);
+
+    let x: i32 = 5;
+    makes_copy(some_integer: x);
+    println!("{}", x);
+}
+
+fn takes_ownership(some_string: String) {
+    println!("{}", some_string);
+}
+fn makes_copy(some_integer: i32) {
+    println!("{}", some_integer);
 }
