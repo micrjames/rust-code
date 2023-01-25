@@ -1,17 +1,15 @@
 fn main() {
-    let s1: String = String::from("hello");
-    // let (s2, len) = calculate_length(s1);
-    let len: usize = calculate_length(&s1);
-    println!("The length of '{}' is {}.", s1, len);
+    let mut s1: String = String::from("hello");
+    change(&mut s1);
+
+    println!("{}", s1);
 }
 
-/*
-fn calculate_length(s: String) -> (String, usize) {
-    let length: usize = s.len();
-    (s, length)
+fn change(some_string: &mut String) {
+    some_string.push_str(", world");
 }
-*/
-fn calculate_length(s: &String) -> usize {
-    let length: usize = s.len();
-    length
-}
+
+// The rules of references
+// 1. At any given time, you can have either one mutable reference of any number of immutable
+//    references.
+// 2. References must always be valid.
