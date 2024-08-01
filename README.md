@@ -5,28 +5,26 @@ A place for my rust code.
 * [General Info](#general-info)
 * [Technologies Used](#technologies-used)
 * [Features](#features)
-* [Setup](#setup)
+* [Contents](#contents)
 * [Usage](#usage)
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
 * [Contact](#contact)
 
 ## General Info
-These examples are created from following along with the standard Rust book. Any projects created after working through the book will be kept as another project.
+The code, here, is written in the course of working through *The Rust Book*.
 
 ## Technologies Used
 We're just using the usual Rust programming language here, as well as, libraries to create the projects.
+As the code is written based on the material contain in the Rust book referenced above, the programming language used is *Rust*.
 
-## Features
-* 
-* 
-* 
-* 
-* 
-* 
+## Contents
+### Hello
+### Guessing Game
+### Ownership
 
 ## Setup
-No real setup is necessary with these projects. Just navigate to the directory and run the project from there.
+Simply change from the main directory of *rust-code* to the directory that contains the relevant code.
 
 ## Running the Code
 We can start out by creating a new project by:
